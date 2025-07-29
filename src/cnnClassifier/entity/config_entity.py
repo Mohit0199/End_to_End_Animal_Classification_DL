@@ -23,7 +23,7 @@ class PrepareBaseModelConfig:
     params_classes: int
 
 
-#
+# This entity contains the configuration for training the CNN model in the CNN Classifier project.
 @dataclass(frozen=True)
 class TrainingConfig:
     root_dir: Path
@@ -34,3 +34,14 @@ class TrainingConfig:
     params_batch_size: int
     params_is_augmentation: bool
     params_image_size: list
+
+
+# This entity contains the configuration for evaluating the CNN model in the CNN Classifier project.
+@dataclass(frozen=True)
+class EvaluationConfig:
+    path_of_model: Path
+    training_data: Path
+    all_params: dict
+    mlflow_uri: str
+    params_image_size: list
+    params_batch_size: int

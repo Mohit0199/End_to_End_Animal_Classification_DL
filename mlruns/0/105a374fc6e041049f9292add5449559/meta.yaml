@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Mohit/Projects/End_to_End_Cancer_Classification_DL/mlruns/0/105a374fc6e041049f9292add5449559/artifacts
+end_time: 1753778326686
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 105a374fc6e041049f9292add5449559
+run_name: fearless-wren-664
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753778303481
+status: 3
+tags: []
+user_id: mohit

@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Mohit/Projects/End_to_End_Cancer_Classification_DL/mlruns/0/models/m-b57e2ca2e6e842509aa5473d6a805cee/artifacts
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.10.9
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.12.0
+    model_type: keras
+    save_format: tf
+mlflow_version: 3.1.1
+model_id: m-b57e2ca2e6e842509aa5473d6a805cee
+model_size_bytes: 60058120
+model_uuid: m-b57e2ca2e6e842509aa5473d6a805cee
+prompts: null
+run_id: 105a374fc6e041049f9292add5449559
+utc_time_created: '2025-07-29 08:38:23.889338'
