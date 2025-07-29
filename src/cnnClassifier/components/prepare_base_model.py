@@ -30,10 +30,10 @@ class PrepareBaseModel:
                 model.trainable = False
 
         flatten_in = tf.keras.layers.Flatten()(model.output)
-        prediction = tf.keras.layers.Dense(
-            units=classes,
-            activation="softmax"
-        )(flatten_in)
+        dense1 = tf.keras.layers.Dense(512, activation="relu")(flatten_in)
+        dropout1 = tf.keras.layers.Dropout(0.5)(dense1)
+        dense2 = tf.keras.layers.Dense(128, activation="relu")(dropout1)
+        prediction = tf.keras.layers.Dense(units=classes, activation="softmax")(dense2)
 
         full_model = tf.keras.models.Model(
             inputs=model.input,

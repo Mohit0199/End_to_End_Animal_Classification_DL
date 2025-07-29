@@ -12,6 +12,7 @@ stages:
     cmd: python src/cnnClassifier/pipeline/stage_02_prepare_base_model.py
     deps:
       - src/cnnClassifier/pipeline/stage_02_prepare_base_model.py
+      - src/cnnClassifier/components/prepare_base_model.py
       - config/config.yaml
     params:
       - IMAGE_SIZE
@@ -27,6 +28,7 @@ stages:
     cmd: python src/cnnClassifier/pipeline/stage_03_model_trainer.py
     deps:
       - src/cnnClassifier/pipeline/stage_03_model_trainer.py
+      - src/cnnClassifier/components/model_trainer.py
       - config/config.yaml
       - artifacts/data_ingestion/Data
       - artifacts/prepare_base_model

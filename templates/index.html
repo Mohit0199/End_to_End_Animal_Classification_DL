@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lung Disease Classifier</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Lung Disease Classifier</h1>
+  </header>
+
+  <main class="single-panel">
+    <section class="prediction-panel">
+      <h2>Predict Disease</h2>
+      <input type="file" id="imageUpload" accept="image/*" />
+      <div id="imagePreviewContainer">
+        <img id="imagePreview" src="" alt="Image Preview" />
+      </div>
+      <button onclick="predictImage()">Predict</button>
+      <div class="result-box" id="resultBox">Prediction result will appear here.</div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
