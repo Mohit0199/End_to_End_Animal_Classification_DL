@@ -75,7 +75,7 @@ class ConfigurationManager:
         eval_config = EvaluationConfig(
             path_of_model="artifacts/training/model.h5",
             training_data="artifacts/data_ingestion/Data",
-            mlflow_uri="https://dagshub.com/Mohit0199/End_to_End_Cancer_Classification_DL.mlflow",
+            mlflow_uri="https://dagshub.com/Mohit0199/End_to_End_Animal_Classification_DL.mlflow",
             all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,
             params_batch_size=self.params.BATCH_SIZE

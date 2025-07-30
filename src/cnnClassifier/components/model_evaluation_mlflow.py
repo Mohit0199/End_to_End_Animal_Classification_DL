@@ -52,7 +52,7 @@ class Evaluation:
 
     
     def log_into_mlflow(self):
-        dagshub.init(repo_owner='Mohit0199', repo_name='End_to_End_Cancer_Classification_DL', mlflow=True)
+        dagshub.init(repo_owner='Mohit0199', repo_name='End_to_End_Animal_Classification_DL', mlflow=True)
         
         with mlflow.start_run() as run:
             mlflow.log_params(self.config.all_params) # logs all params from params.yaml
@@ -67,7 +67,7 @@ class Evaluation:
             # Register the logged model
             mlflow.register_model(
                 model_uri=f"runs:/{run.info.run_id}/model",
-                name="Cancer_Classifier"
+                name="Animal_Classifier"
             )
 
                     

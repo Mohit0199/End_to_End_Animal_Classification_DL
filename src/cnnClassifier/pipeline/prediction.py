@@ -21,14 +21,11 @@ class PredictionPipeline:
         print(result)
 
         if result[0] == 0:
-            prediction = 'adenocarcinoma_left.lower.lobe_T2_N0_M0_Ib'
+            prediction = 'Cat'
             return [{ "image" : prediction}]
         elif result[0] == 1:
-            prediction = 'large.cell.carcinoma_left.hilum_T2_N2_M0_IIIa'
-            return [{ "image" : prediction}]
-        elif result[0] == 2:
-            prediction = 'Normal'
+            prediction = 'Dog'
             return [{ "image" : prediction}]
         else:
-            prediction = 'squamous.cell.carcinoma_left.hilum_T1_N2_M0_IIIa'
+            prediction = 'Snake'
             return [{ "image" : prediction}]
